@@ -2,6 +2,7 @@
 const result = document.querySelector('.result')
 const humanScore = document.querySelector('#human-score')
 const machineScore = document.querySelector('#machine-score')
+const animes = document.querySelector(".animes")
 
 
 
@@ -27,6 +28,7 @@ const playTheGame = (human, machine) => {
 
     if (human === machine) {
         result.innerHTML = 'Deu Empate!'
+        animes.src = './assets/empate.png'
 
     } else if (
         (human === 'paper' && machine === 'rock') ||
@@ -37,10 +39,12 @@ const playTheGame = (human, machine) => {
         humanScoreNumber++
         humanScore.innerHTML = humanScoreNumber
         result.innerHTML = 'Você ganhou!!'
+        animes.src = "./assets/top.png"
     }
     else {
         machineScoreNumber++
         machineScore.innerHTML = machineScoreNumber
         result.innerHTML = 'Você Perdeu para Alexa!!!'
+        animes.src ="./assets/triste.png"
     }
 }
