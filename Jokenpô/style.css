@@ -22,7 +22,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     min-height: 100vh;
-   
+
 
 
 }
@@ -91,4 +91,26 @@ h1 {
 .machine-score span {
     color: rgb(223, 81, 81);
 
+}
+
+@media(max-width:600px) {
+    img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100px;
+        max-height: 50px;
+        width: auto;
+        height: auto;
+    }
+
+    body {
+        background: url(./assets/jokenpo.webp);
+        background-size: cover;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        min-height: 100vh;
+
+    }
 }
